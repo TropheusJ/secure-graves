@@ -38,7 +38,7 @@ public class CaptchaLoader extends SimpleJsonResourceReloadListener implements I
 			CaptchaType cType = CaptchaType.REGISTRY.get(type);
 			if (cType == null)
 				throw new IllegalArgumentException("Type [" + type + "] does not exist!");
-			Captcha captcha = cType.deserialize(obj);
+			Captcha captcha = cType.deserialize(id, obj);
 			if (captcha == null)
 				throw new IllegalArgumentException("Failed to deserialize captcha of type " + type);
 			Captcha.ALL.put(id, captcha);

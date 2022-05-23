@@ -28,5 +28,5 @@ public abstract class CaptchaType {
 		this.id = id;
 	}
 
-	public abstract Captcha deserialize(JsonObject jsonObject);
+	public abstract Captcha deserialize(ResourceLocation id, JsonObject jsonObject);
 }

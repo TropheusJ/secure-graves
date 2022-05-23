@@ -6,6 +6,7 @@ import io.github.tropheusj.secure_graves.captcha.Captcha;
 import io.github.tropheusj.secure_graves.captcha.CaptchaInstance;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.Widget;
 import net.minecraft.client.gui.components.events.GuiEventListener;
 import net.minecraft.client.gui.narration.NarratableEntry;
@@ -26,7 +27,23 @@ public class SecureGraveScreen extends AbstractContainerScreen<SecureGraveMenu> 
 		this.imageWidth = 512;
 		this.imageHeight = 512;
 		super.init();
-		this.captcha = Captcha.random().newInstance(this);
+		refresh();
+	}
+
+	public void refresh() {
+		clearWidgets();
+		Captcha oldCaptcha = captcha == null ? null : captcha.captcha();
+		Captcha newCaptcha;
+		do {
+			newCaptcha = Captcha.random();
+		} while (newCaptcha == oldCaptcha);
+		this.captcha = newCaptcha.newInstance(this);
+	}
+
+	public void submit() {
+		if (captcha.solved()) {
+			Minecraft.getInstance().setScreen(null);
+		} else refresh();
 	}
 
 	@Override

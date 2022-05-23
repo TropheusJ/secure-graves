@@ -1,0 +1,11 @@
+{
+  "type": "secure_graves:picture_box_selection",
+  "contents": "block.minecraft.sand",
+  "texture": "secure_graves:textures/captcha/picture_box_selection/single_subjects/flowers.png",
+  "correct_values": [
+    "XXXX",
+    "OOOO",
+    "OOOO",
+    "OOOO"
+  ]
+}

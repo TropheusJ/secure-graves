@@ -3,9 +3,9 @@
   "contents": "block.minecraft.dandelion",
   "texture": "secure_graves:textures/captcha/picture_box_selection/single_subjects/flowers.png",
   "correct_values": [
-    [ false, false, false, false ],
-    [ false, false, true, true ],
-    [ false, false, false, false ],
-    [ true, true, false, false ]
+    "OOOO",
+    "OOXX",
+    "OOOO",
+    "XXOO"
   ]
 }

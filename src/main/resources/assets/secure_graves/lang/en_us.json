@@ -1,3 +1,5 @@
 {
-  "secure_graves.picture_box_selection.instructions": "Select all boxes containing:"
+  "secure_graves.picture_box_selection.instructions": "Select all boxes containing:",
+  "secure_graves.captcha.submit": "Submit",
+  "secure_graves.captcha.watermark": "Secure Graves™ Technology"
 }

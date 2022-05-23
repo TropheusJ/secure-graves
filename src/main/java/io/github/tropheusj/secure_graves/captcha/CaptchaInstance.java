@@ -12,6 +12,8 @@ import net.fabricmc.api.Environment;
 public interface CaptchaInstance {
 	boolean solved();
 
+	Captcha captcha();
+
 	@Environment(EnvType.CLIENT)
 	void render(PoseStack matrices, SecureGraveScreen screen, float partialTicks, int mouseX, int mouseY);
 }

@@ -1,0 +1,11 @@
+{
+  "type": "secure_graves:picture_box_selection",
+  "contents": "block.minecraft.tall_grass",
+  "texture": "secure_graves:textures/captcha/picture_box_selection/single_subjects/flowers.png",
+  "correct_values": [
+    "XXXO",
+    "OOOO",
+    "OOOO",
+    "OOOO"
+  ]
+}
