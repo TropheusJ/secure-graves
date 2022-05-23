@@ -1,10 +1,2 @@
-# Fabric Example Mod
-
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the
-IDE that you are using.
-
-## License
-
-This template is available under the MIT license. Feel free to learn from it and incorporate it in your own projects.
+# Why?
+![unholy](https://cdn.discordapp.com/attachments/705864145169416313/977790292449193994/unknown.png)
